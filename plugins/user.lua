@@ -16,6 +16,13 @@ return {
     build = function() vim.fn["mkdp#util#install"]() end
   },
   {
+    "lervag/vimtex",
+    lazy = false,
+    init = function()
+      -- Use init for configuration, don't use the more common "config".
+    end
+  },
+  {
     "loctvl842/monokai-pro.nvim",
     name = "monokai-pro",
     config = function()
